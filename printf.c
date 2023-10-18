@@ -1,4 +1,5 @@
 #include "main.h"
+#include <strlen>
 int _printf(const char *format, ...)
 {int i, d_val;
 	char val, str_val;
@@ -16,7 +17,7 @@ int _printf(const char *format, ...)
 			if (format[i + 1] == '%')
 			{
 				write(1, "%", 1);
-				i++;
+				i++;/*skip the second '%'*/
 				char_count++;
 			}
 			else if (format[i + 1] == 'c')
