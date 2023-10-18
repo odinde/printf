@@ -41,3 +41,9 @@ int _printf(const char *format, ...)
 		}
 		va_end(args);
 		return (char_count); }
+		{
+			int main()
+				int _printf(const char *format, ...);
+			_printf("%");
+			_printf("%c",'\0');
+			_printf("%%");
