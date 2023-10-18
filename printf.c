@@ -1,5 +1,4 @@
 #include "main.h"
-#include <strlen>
 int _printf(const char *format, ...)
 {int i, d_val;
 	char val, str_val;
